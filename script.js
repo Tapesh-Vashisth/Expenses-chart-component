@@ -21,7 +21,12 @@ xhr.onload = function(){
             bars[i].style.height = `${height}px`;
         }
 
-        let today = new Date().getDay() - 1;
+        let today = new Date().getDay();
+        if (today == 0){
+            today = 6;
+        }else{
+            today = today - 1;
+        }
         bars[today].style.backgroundColor = "hsl(186, 34%, 60%)";
 
         let hovers = document.getElementsByClassName("hover");
@@ -40,7 +45,6 @@ xhr.onload = function(){
                         break;
                     }
                 }
-               
                 brother.style.display = "block";
                 brother.textContent = response[find].amount;
             })
