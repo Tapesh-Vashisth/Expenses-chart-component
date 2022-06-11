@@ -28,7 +28,10 @@ xhr.onload = function(){
         
         for (let i = 0; i < bars.length; i++){
             bars[i].addEventListener("mouseover", function(e){
-                let target = e.target;
+                if (!e){
+                    e = window.event;
+                }
+                let target = e.target || e.srcElement;
                 let brother = target.previousElementSibling;
                 let find;
                 for (let i = 0; i < bars.length; i++){
@@ -43,7 +46,10 @@ xhr.onload = function(){
             })
 
             bars[i].addEventListener("mouseout", function(e){
-                let target = e.target;
+                if (!e){
+                    e = window.event;
+                }
+                let target = e.target || e.srcElement;
                 let brother = target.previousElementSibling;
                 brother.style.display = "none";
             })

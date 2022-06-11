@@ -106,3 +106,9 @@ footer h1{
     font-size: 14px;
     margin-bottom: 5px;
 }
+
+@media screen and (max-width: 460px) {
+    .adjust{
+        width: 85%;
+    }
+}
