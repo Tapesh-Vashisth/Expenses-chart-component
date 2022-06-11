@@ -12,56 +12,62 @@
   <link rel="favicon-32x32" href="images/favicon-32x32.png">
 
   <style>
-    .attribution { font-size: 11px; text-align: center; }
+    .attribution { font-size: 11px; text-align: center; margin-top: 20px; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
   
   <title>Frontend Mentor | Expenses chart component</title>
-
 </head>
 <body>
-<header>
-  <div>
-    My balance
-    $921.48
-  </div>
-  <svg width="72" height="48" viewBox="0 0 72 48" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#382314" cx="48" cy="24" r="24"/><circle stroke="#FFF" stroke-width="2" cx="24" cy="24" r="23"/></g></svg>
-</header>
-  
-  
-<section>
+  <header class="adjust">
     <div>
-      Spending - Last 7 days
+      <p>
+        My balance
+      </p>
+      <h2>
+        $921.48
+      </h2>
     </div>
-    
     <div>
-      <div><div></div>mon</div>  
-      <div><div></div>tue</div>  
-      <div><div></div>wed</div>  
-      <div><div></div>thu</div>  
-      <div><div></div>fri</div>  
-      <div><div></div>sat</div>  
-      <div><div></div>sun</div>  
+      <svg width="72" height="48" viewBox="0 0 72 48" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#382314" cx="48" cy="24" r="24"/><circle stroke="#FFF" stroke-width="2" cx="24" cy="24" r="23"/></g></svg>
     </div>
-
-    <hr>
-
-    <footer>
-      <div>
-        <p>Total this month</p> 
-        <h1>$478.33</h1>
-      </div>
-  
-      <div>
-        <p>+2.4%</p>
-        <p>from last month</p>
-      </div>
-    </footer>
+  </header>
     
+    
+  <section class="adjust">
+      <div>
+        <h3>Spending - Last 7 days</h3>
+      </div>
+      
+      <div class="graph">
+        <div class="combined"><div class="hover"></div><div class="bar"></div><p>mon</p></div>  
+        <div class="combined"><div class="hover"></div><div class="bar"></div><p>tue</p></div>  
+        <div class="combined"><div class="hover"></div><div class="bar"></div><p>wed</p></div>  
+        <div class="combined"><div class="hover"></div><div class="bar"></div><p>thu</p></div>  
+        <div class="combined"><div class="hover"></div><div class="bar"></div><p>fri</p></div>  
+        <div class="combined"><div class="hover"></div><div class="bar"></div><p>sat</p></div>  
+        <div class="combined"><div class="hover"></div><div class="bar"></div><p>sun</p></div>  
+      </div>
+
+      <hr>
+
+      <footer class="same">
+        <div>
+          <p>Total this month</p> 
+          <h1>$478.33</h1>
+        </div>
+    
+        <div>
+          <p><strong>+2.4%</strong></p>
+          <p>from last month</p>
+        </div>
+      </footer>
+      
+    </section>
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="#">Your Name Here</a>.
     </div>
-</section>
+  <script src="./script.js"></script>
 </body>
 </html>
